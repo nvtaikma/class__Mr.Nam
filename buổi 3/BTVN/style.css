@@ -67,3 +67,6 @@
 .blog__right_info__tagName{
     padding: 20px;
 }
+footer button:hover{
+    cursor: not-allowed;
+}

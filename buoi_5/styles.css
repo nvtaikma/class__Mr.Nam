@@ -27,7 +27,6 @@
 
 .h-left-infor {
     display: flex;
-    
 }
 
 .h-left-infor a {
@@ -145,28 +144,245 @@
 .h-categories ul li a img {
     margin-left: 6px;
 }
-.main__left{
-    width: 25%;
-    height: 500px;
-    background-color: #6A983C;
+
+.main-categories {
+    padding: 0 45px;
+    display: flex;
 }
-.main__right{
-    width: 75%;
-    
+
+.nav-category {
+    width: 20%;
 }
-.category__menu{
-    padding: 64px 45px 64px 32px;
-    background-color: red;
-    width: 100%;
-    height: 60px;
+
+.nav-category-item {
+    padding: 64px 0;
 }
-.category__menu h1{
-    font-family: 'Poppins';
-    font-style: normal;
+
+.nav-category-item h2 {
     font-weight: 600;
     font-size: 18px;
-    line-height: 27px;
+    font-family: 'Poppins';
+    margin-bottom: 16px;
+}
+
+.nav-category-item ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-category-item ul li a {
+    color: #6A983C;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-more-category {
+    width: 179px;
+    height: 48px;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 48px;
+}
+
+.list-product {
+    width: 80%;
+    padding-left: 32px;
+}
+
+.space-for-heading {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-item {
+    width: 48%;
+    height: 280px;
+    background: #C8DEB3;
+    border-radius: 12px;
+    padding: 48px 0 28px 32px;
+}
+
+.space-item p {
+    font-weight: 600;
+    font-size: 12px;
+    color: #6A983C;
+    margin-bottom: 8px;
+}
+
+.space-item h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 96px;
+}
+
+.space-item button {
+    width: 163px;
+    height: 47px;
+    border: 2px solid #92C064;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 12px;
+    background-color: none;
+    cursor: pointer;
+}
+
+.space-item button img {
+    margin-left: 12px;
+}
+
+.product-item {
+    width: 269px;
+    padding: 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    margin: 64px 0;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container p {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    color: #6A983C;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.product-container {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    
+    
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    /* gap: 32px; */
+}
+
+.product-item h3 {
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 16px;
     color: #151515;
 }
 
-/* crousell */
+.product-item > p {
+    color: #575757;
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+
+.price p:first-child {
+    font-weight: 600;
+    font-size: 18px;
+    color: #151515;
+    text-decoration-line: none;
+}
+
+.price p {
+    color: #A9A9A9;
+    text-decoration-line: line-through;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.price button {
+    width: 90px;
+    height: 36px;
+    background: #6A983C;
+    border: 2px solid #46760A;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 15px;
+}
+/* slider */
+.slider{
+    padding: 64px 0px;
+    margin-bottom: 64px;
+}
+
+.carousel-cell {
+    width: 30%;
+    height: 300px;
+    margin-right: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    
+  }
+
+.carousel-cell p:last-child{
+    margin-top: 16px;
+}
+  
+.flickity-button.flickity-prev-next-button.previous{
+    border-radius: 0;
+    color: #fff;
+    background-color: #151515;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:  10px;
+    width: 34px;
+    height: 50px;
+}
+
+.flickity-button.flickity-prev-next-button.next{
+    border-radius: 0;
+    color: #fff;
+    background-color: #151515;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:  10px;
+    width: 34px;
+    height: 50px;
+}
+.flickity-page-dots{
+    display: none;
+}
+
+.slider-heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px 36px;
+}
+.btn_ button{
+    width: 52px;
+height: 23px;
+background-color: white;
+border: none;
+font-weight: 700;
+font-size: 15px;
+line-height: 22px;
+
+
+color: #151515;
+}
+.product__section__headline{
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 45px 73px 45px;
+}
+

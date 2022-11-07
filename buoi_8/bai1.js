@@ -20,9 +20,77 @@ const people = [
     { firstName: 'Aaron', lastName: 'Garrett', DOB: '09/04/1985', department: 'Development', salary: '39000' },
 ];
 
-// 1
-let average = 0;
+//câu 1
 
-people.forEach((item)=> console.log(item.lastName));
-// average += Number(e.salary)
-// console.log(average);
+
+//cách 1:
+// let average = 0;
+// people.forEach((item)=> average += Number(item.salary) / people.length ) ;
+//cách 2:
+// const average = people.reduce((a, i) => a + parseInt(i.salary), 0) / (people.length + 0.0);
+
+//câu 2
+
+
+// let ullYear = new Date().getFullYear;
+// console.log(ullYear);
+
+//cách 1:
+// const olderThanThirty = people.filter(person => new Date().getFullYear() - new Date(person.DOB).getFullYear() > 30)
+// console.table(olderThanThirty);
+//cách 2:
+// const olderThan30 = [];
+// for(let i = 0; i < people.length; i++) {
+//     if((new Date().getFullYear() - new Date(people[i].DOB).getFullYear()) > 30 ) {
+//         olderThan30.push(people[i])
+//     }
+// }
+// console.table(olderThan30);
+
+// câu 3:
+
+// cách 1:
+// const fullName = people.map(({firstName, lastName}) => `${firstName} ${lastName}`)
+
+// cách 2:
+// let fullName = [];
+// for(var i = 0; i<people.length; i++){
+//     fullName.push(`${people[i].firstName} ${people[i].lastName}`)
+// }
+// console.table(fullName);
+
+
+// cách 3
+
+// const fullName = [];
+// people.forEach(person => {
+//     fullName.push(`${person.firstName} ${person.lastName}`)
+// });
+// console.table(fullName);
+
+// câu 4:
+
+// const array_ordered = people.sort((a, b) => new Date(a.DOB) - new Date(b.DOB) ? 1 : -1)
+// console.table(array_ordered);
+
+
+// câu 5:
+
+let departments = {};
+
+people.forEach((e) => {
+    if(departments[e.department] == null)
+        departments[e.department] = 0;
+    departments[e.department] += 1;
+})
+console.log(departments);
+
+
+
+
+
+
+
+
+
+

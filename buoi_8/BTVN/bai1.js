@@ -70,7 +70,7 @@ const people = [
 
 // câu 4:
 
-// const array_ordered = people.sort((a, b) => new Date(a.DOB) - new Date(b.DOB) ? 1 : -1)
+// const array_ordered = people.sort((a, b) => new Date(a.DOB) - new Date(b.DOB))
 // console.table(array_ordered);
 
 
@@ -79,6 +79,7 @@ const people = [
 let departments = {};
 
 people.forEach((e) => {
+    // console.log(departments[e.department] == null);
     if(departments[e.department] == null)
         departments[e.department] = 0;
     departments[e.department] += 1;

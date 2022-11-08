@@ -12,32 +12,32 @@ let array = [ 25, 50, 43, 36, 31, 26, 24, 19, 28, 24,  4, 18, 16, 48, 47, 49, 42
 // cách 1
 const uniqueSet = new Set(array);
 const backToArray = [...uniqueSet];
+console.log(backToArray);
 
 
-// console.log(backToArray);
 // cách 2:
 
-const newSet = Array.from(new Set(array));
+// const newSet = Array.from(new Set(array));
 
 // console.log(newSet);
 
 // cách 3
 
-let arrayNew = array.reduce(function (accumulator, element) {
+// let arrayNew = array.reduce(function (accumulator, element) {
     
-    if (accumulator.indexOf(element) === -1) {
-      accumulator.push(element)
-    }
-    return accumulator
-  }, [])
+//     if (accumulator.indexOf(element) === -1) {
+//       accumulator.push(element)
+//     }
+//     return accumulator
+//   }, [])
   
 //   console.log(arrayNew)
 
   //cách 4
 
-    let result = [];
-    result = array.filter(function(element){
-    return result.includes(element) ? '' : result.push(element)
-    });
+    // let result = [];
+    // result = array.filter(function(element){
+    // return result.includes(element) ? '' : result.push(element)
+    // });
 
-    console.log("result =",result);
+    // console.log("result =",result);

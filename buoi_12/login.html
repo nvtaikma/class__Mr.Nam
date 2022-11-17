@@ -27,7 +27,8 @@
 <body>
   <!-- event.preventDefault() -->
   <!-- onchange="validateForm();" -->
-    <form onclick="validateForm();event.preventDefault()" >
+    <!-- <form onclick="validateForm();event.preventDefault()" > -->
+    <form onclick="event.preventDefault();checkValidation()" >
         <div class="sign-in">
           <div class="signIn-form">
             <a href="/">
@@ -41,10 +42,11 @@
                 type="text"
                 placeholder="Email"
                 id="Email"
+                name="Email"
                 
               />
-              <span id="Email-error-message" class="error-message">Invalid email</span><br>
-              <span id="checkEmail" class="error-message">Enter your correct email</span>
+              <span id="Email-error-message" class="error-message"></span>
+              <span id="checkEmail" class="error-message"></span>
             </div>
             <div>
               <span>Password:</span>
@@ -52,15 +54,20 @@
                 type="password"
                 placeholder="Password"
                 id="Password"
-               
+                name="Mật khẩu"
+                minlength="8"
+                maxlength="20"
               />
-              <span id="Password-error-message" class="error-message">Invalid password</span>
-              <span id="lenght_pass" class="error-message" >Minimum password is 8, 1 capital letter</span>
+              <span id="Password-error-message" class="error-message"></span>
+              <span id="lenght_pass" class="error-message" ></span>
+              <span id="checkPass-errot" class="error-message" ></span>
+
               <!-- <div id="ChuInHoa">Password contains at least 1 capital letter</div>
               <div id="KyTuDacBiet">Password contains at least 1 special character</div>
               <div id="so">Password contains at least 1 number</div> -->
             </div>
   
+            <!-- <button id="submit" type="submit" onclick="handeLogin()">Sign In</button> -->
             <button id="submit" type="submit" onclick="handeLogin()">Sign In</button>
           </div>
           <div class="info-group">
